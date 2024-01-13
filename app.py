@@ -21,15 +21,14 @@ while index < len(datas):
         temp = datas[index].find_all('td', class_="data_0_0")
         if temp:
             hpa = temp[0].text
-            Precipition = temp[2].text
-            rainfall = temp[4].text
-            temp_av = temp[7].text
-            temp_max = temp[8].text
-            temp_min = temp[9].text
-            humidity_av = temp[10].text
-            humidity_min = temp[11].text
-            suntime = temp[17].text
-            print(hpa,Precipition,rainfall,temp_av,temp_max,humidity_av,humidity_min,suntime)
+            rainfall = temp[2].text
+            temp_av = temp[5].text
+            temp_max = temp[6].text
+            temp_min = temp[7].text
+            humidity_av = temp[8].text
+            humidity_min = temp[9].text
+            suntime = temp[15].text
+            print(hpa,rainfall,temp_av,temp_max,temp_min,humidity_av,humidity_min,suntime)
         else:
             print("nodata")
     else:
