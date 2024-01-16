@@ -1,3 +1,2 @@
 *.db
-*.db-journal
-*.DS_Store
+.DS_Store
